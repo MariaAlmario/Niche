@@ -107,7 +107,7 @@ body {
 
 }
 .slider{
-    display: block;
+    display: none;
 }
 .slider img{
     width: 500px;

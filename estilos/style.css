@@ -123,3 +123,7 @@ h2{
 #Categorias img{
     width: 40%;
 }
+#Categorias li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}

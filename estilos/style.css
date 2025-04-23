@@ -3,14 +3,6 @@ body {
     background-image: url(/Imagenes/Fondo.jpg);
     background-size: cover; /* Asegura que la imagen cubra todo el fondo */
     background-position: center; /* Centra la imagen en el fondo */
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f4f4f4; /* Colores adicionales combinados */
 }
 
 /* Parte superior de la página */

@@ -1,26 +1,28 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f3f4f6;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
+  color: white;
 }
 
 .contenedor {
-  background-color: #fff;
-  padding: 20px 30px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  max-width: 400px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
   text-align: center;
+  max-width: 400px;
+  width: 100%;
 }
 
 h1 {
   margin-bottom: 20px;
-  color: #333;
+  font-size: 24px;
 }
 
 form {
@@ -30,22 +32,32 @@ form {
 
 input {
   margin-bottom: 15px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
   font-size: 16px;
+  outline: none;
+  color: #333;
+}
+
+input::placeholder {
+  color: #aaa;
 }
 
 button {
-  padding: 10px;
-  background-color: #007bff;
+  padding: 12px;
+  background-color: #ff7675;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 16px;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #d63031;
+}
+
+button:active {
+  transform: scale(0.98);
 }

@@ -98,3 +98,58 @@ body {
    font-size: xx-large;
    text-align: center;
 }
+
+
+/* Informacion adicional*/
+
+#Opciones {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    width: 100%; /* Asegura que el menú ocupe todo el ancho */
+    justify-content: space-between; /* Distribuye los elementos de forma equitativa */
+    align-items: center; /* Alinea los elementos verticalmente al centro */
+    background-color: #f0f0f0; /* Color de fondo para visualizar el área */
+}
+
+#Opciones ul {
+    display: flex; /* Hace que los li estén en fila */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    justify-content: space-evenly; /* Distribuye los elementos de manera equitativa */
+}
+
+#Opciones li {
+    list-style-type: none; /* Quitar los puntos */
+    margin-right: 2px; /* Espacio entre los elementos */
+    flex-grow: 1; /* Hace que los li ocupen todo el espacio disponible */
+    text-align: center; /* Centra el texto dentro de los li */
+    font-size:clamp(1rem, 2vw, 1.5rem)
+}
+
+#Opciones .primero li {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 5px;
+    display: block; /* Cambiado a block para que ocupe todo el espacio disponible */
+}
+
+#Opciones .primero li:hover {
+    background-color: rgb(38, 99, 116);
+    color: #ffffff;
+}
+
+/* Menú desplegable */
+#Opciones .primero li ul  {
+    display: none;
+    margin-left: 12%;
+    min-width: 140px; /* Ancho mínimo */
+    max-width: 360px; /* Ancho máximo para limitar el tamaño */
+    overflow-x: auto; /* Opcional: para habilitar desplazamiento horizontal si hay contenido más amplio */
+}
+
+#Opciones .primero li:hover > ul {
+    display: block;   
+}
+

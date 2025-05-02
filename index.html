@@ -6,6 +6,7 @@
     <title>TechNiche</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/styleslider.css">
+    <link rel="stylesheet" href="estilos/stylemen.css">
     <style>
         body {
             background-image: url("Imagenes/Fondo.jpg");
@@ -17,23 +18,38 @@
 
 </head>
 <body>
+    <header class="header">
+        
+     </header>
     <div id="Princ">
         <ul>
-            <li><img src="Imagenes/menu.png" alt=""></li>
+            <li>
+                <div class="top-bar">
+                <div class="icon-menu" id="icon-menu">
+                    <div class="icon-menu__bar"></div>
+                </div>
+    
+            </div>
+            
+        </li>
             <li><img src="Imagenes/LogoTech.PNG" alt="" id="Logo"></li>
             <li><img src="Imagenes/Titulo.PNG" alt="" id="Titulo"></li>
             <li><a href="iniciar-sesion.html"><img src="Imagenes/lupa (1).png" alt=""id="Lupa"></a></li>
             <li><a href="registro.html"><img src="Imagenes/carrito-de-compras (1).png" alt=""></a></li>  
         </ul>
     </div>
-    <div id="Menu">
-        <ul>
-            <li><a href="#">Menú</a></li>
-            <li><a href="#">Categorias</a></li>
-            <li><a href="#">Preguntas Frecuentes</a></li>
-            <li><a href="#">Contacto</a></li>
+    <nav>
+        <ul class="menu" id="main-menu">
+            <li class="menu__item"><a href=" #" class="menu__link">Item 1</a></li>
+            <li class="menu__item"><a href="#"class="menu__link">Item 2</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Item 3</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Item 4</a></li>
+            <li class="menu__item"><a href="#" class="menu__link">Item 5</a></li>
+
         </ul>
-    </div>
+
+    </nav>
+     <script src="menu.js"></script>
     <div class="right">
         <!-- slider -->
         <div class="slider">

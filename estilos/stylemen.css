@@ -1,1 +1,81 @@
+:root {
+    --menu-color: #000000;
+    --height: 4px;
+    --width: 30px;
+  }
+  
+  
+  
+  
+  .icon-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 1500;
+  }
+  
+  .icon-menu__bar {
+    background: var(--menu-color);
+    width: var(--width);
+    height: var(--height);
+    border-radius: calc(var(--height) / 2);
+    position: relative;
+  }
+  
+ 
+  .icon-menu__bar::after,
+  .icon-menu__bar::before {
+    content: ""; 
+    position: absolute;
+    display: block;
+    width: var(--width);
+    height: var(--height);
+    border-radius: calc(var(--height) / 2) ;
+    background: var(--menu-color);
+    top: -.5em;
+  }
+  .icon-menu__bar::after{
+    top: .5em;
+  }
+  
+  .menu {
+    position: fixed;
+    top: auto;
+    left: 0;
+    width: 220px;               /* ancho fijo más controlado */
+    height: 100%;               /* solo ocupa lo necesario en alto */
+    max-height: 100vh;          /* evita que se desborde si hay muchos ítems */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    /* asegura que el contenido esté alineado a la izquierda */
+    background: rgba(255, 255, 255, 0.863);
+    padding: 1em 0;
+    margin: 0;
+    list-style: none;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+    z-index: 900;
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  
+  
+  
+  .menu--show{
+    transform: translateX(0);
 
+  }
+
+  .menu__item{
+    padding: 1em;
+   
+
+  }
+  .menu__link{
+    color: var(--menu-color);
+    text-decoration: none;
+  }

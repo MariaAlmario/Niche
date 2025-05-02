@@ -1,11 +1,11 @@
 .right {
     position: relative;
-    width: 90%; 
-    margin: 2%;
+    width: 40%; 
+    margin: 4%;
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 3%;
+    left: 25%;
     border: 3%;
     border-color: rgba(255, 255, 255, 0.863);
 }

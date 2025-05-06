@@ -1,12 +1,12 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  background: linear-gradient(135deg, #e2e6ed, #fafcff);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
-  color: white;
+  color: rgb(35, 27, 99);
 }
 
 .contenedor {
@@ -46,7 +46,7 @@ input::placeholder {
 
 button {
   padding: 12px;
-  background-color: #ff7675;
+  background-color: #4b3f76;
   color: white;
   border: none;
   border-radius: 10px;
@@ -55,7 +55,7 @@ button {
 }
 
 button:hover {
-  background-color: #d63031;
+  background-color: #2e2748;
 }
 
 button:active {

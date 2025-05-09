@@ -6,11 +6,11 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  color: rgb(35, 27, 99);
+  color: rgb(0, 0, 0);
 }
 
 .contenedor {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.5);
   border-radius: 15px;
   padding: 30px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
@@ -46,7 +46,7 @@ input::placeholder {
 
 button {
   padding: 12px;
-  background-color: #4b3f76;
+  background-color: #2e2748;
   color: white;
   border: none;
   border-radius: 10px;
@@ -55,7 +55,7 @@ button {
 }
 
 button:hover {
-  background-color: #2e2748;
+  background-color: #4b3f76;
 }
 
 button:active {

@@ -5,14 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Iniciar Sesión</title>
   <link rel="stylesheet" href="estilos/estilos.css">
+  <style>
+        .background {
+          background-image: url('/Imagenes/Fondo2.jpg');
+          background-size: cover;
+          background-position: center;
+          position: absolute;
+          top: 0; left: 0; right: 0; bottom: 0;
+          opacity: 0.6; /* solo la imagen es transparente */
+          z-index: 0;
+        }
+    </style>
 </head>
 <body>
+  <div class="background" ></div>
   <div class="contenedor">
     <h1>Iniciar Sesión</h1>
     <form>
       <input type="text" placeholder="Nombre de usuario o correo" required>
       <input type="password" placeholder="Contraseña" required>
       <button type="submit">Iniciar Sesión</button>
+      <p>Si no tienes cuenta <a href="/registro.html">Registrate</a></p>
     </form>
   </div>
 </body>

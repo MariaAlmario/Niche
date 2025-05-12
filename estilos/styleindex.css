@@ -120,6 +120,8 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 #Sec1 ul video{
@@ -138,6 +140,8 @@ body{
     list-style-type: none;
     align-items: center;
     flex: 1 1 200px;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .scale-in {

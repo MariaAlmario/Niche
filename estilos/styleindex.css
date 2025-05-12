@@ -1,27 +1,30 @@
 /* Menú general */
 .c-nav {
-    position: fixed;
-    left: 0;
-    width: 100%;
-    height: 100px; /* Aumenta la altura del menú */
-    background: rgba(255, 255, 255);
-    display: flex;
-    align-items: center;
-    justify-content: space-between; /* distribuye logo a un lado y enlaces al otro */
-    z-index: 1000;
-    backdrop-filter: blur(5px);
-    animation: slideUp 0.7s ease-out;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background: rgba(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1000;
+  padding: 10px 0;
+  box-sizing: border-box;
 }
 
-/* Ul con elementos centrados y separados */
 .c-nav ul {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    list-style: none;
-    margin: 20px;
-    padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
 }
 
 /* Imagen/logo a la izquierda */
@@ -90,13 +93,20 @@ body{
     flex-wrap: wrap;
     flex-direction: column; /* si quieres que el título y ul estén en columna */
 }
-#Sec1 h3{
-    font-size: 400%;
+
+#Sec1 h3 {
+  font-size: 2rem;
+  word-wrap: break-word;
+  text-align: center;
 }
-#Sec1 p{
-    font-size: 140%;
-    margin: top 0;
+
+#Sec1 p {
+  font-size: 1rem;
+  word-wrap: break-word;
+  padding: 0 10px;
+  text-align: center;
 }
+
 
 #Sec1 ul{
     display: flex;
@@ -145,35 +155,40 @@ body{
   .c-nav ul {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   .c-nav-item {
-    margin: 10px 0;
+    margin: 5px 0;
+  }
+
+  .c-nav-item img {
+    height: 60px;
   }
 
   #Sec1 {
-    padding: 120px 10px 20px 10px;
+    padding-top: 140px;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-direction: column;
   }
 
   #Sec1 ul {
     flex-direction: column;
     text-align: center;
+    margin-bottom: 30px;
   }
 
   #Sec1 h3 {
-    font-size: 180%;
+    font-size: 1.5rem;
   }
 
   #Sec1 p {
-    font-size: 100%;
+    font-size: 1rem;
   }
 
   #Sec1 ul video {
     width: 100%;
     margin-left: 0;
-  }
-
-  .video-scale-in {
-    border-radius: 30px;
   }
 }

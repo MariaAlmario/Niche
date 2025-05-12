@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="estilos/estilos.css">
   <style>
         .background {
-          background-image: url('/Imagenes/Fondo2.jpg');
+          background-image: url('Imagenes/Fondo2.jpg');
           background-size: cover;
           background-position: center;
           position: absolute;
@@ -21,12 +21,13 @@
   <div class="background" ></div>
   <div class="contenedor">
     <h1>Iniciar Sesión</h1>
-    <form>
-      <input type="text" placeholder="Nombre de usuario o correo" required>
-      <input type="password" placeholder="Contraseña" required>
+    <form id="iniciarsesion">
+      <input id="Usuario" type="text" placeholder="Nombre de usuario o correo" required>
+      <input id="Contrasena" type="password" placeholder="Contraseña" required>
       <button type="submit">Iniciar Sesión</button>
       <p>Si no tienes cuenta <a href="/registro.html">Registrate</a></p>
     </form>
   </div>
+  <script src="script/iniciarsesion.js"></script>
 </body>
 </html>
